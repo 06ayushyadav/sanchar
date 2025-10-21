@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server/src/index.js",
+    "build": "npm install && npm install --prefix client && npm run build --prefix client",
+    "start": "nodemon server/src/index.js"
+  },
+  "keywords": [],
+  "author": "Ayush",
+  "license": "ISC",
+  "description": "This is a chat application server built using Node.js, Express, and Socket.io. It provides real-time communication capabilities for users to chat with each other.",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.7.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.0",
+    "nodemon": "^3.1.10",
+    "socket.io": "^4.8.1"
+  }
+}
